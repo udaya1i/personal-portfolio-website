@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65d08e2d7e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/imgs/logo.jpg" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas abcd fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas abcd fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi there, I am <span>Udaya</span><br>from Kathmandu</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/imgs/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a dedicated Java developer with over 10 months of hands-on experience in
+                        backend development, specializing in Java and Angular technologies. Throughout
+                        my journey, I have actively contributed to the entire development lifecycle,
+                        from designing robust backend solutions to seamlessly integrating with Angular
+                        frontends. My proficiency spans the Java ecosystem, including frameworks like
+                        Spring, and I am adept at creating scalable and high-performance software. With
+                        a keen eye for detail and a commitment to continuous learning, I am passionate
+                        about delivering innovative solutions that elevate the user experience</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="experience">
+                        <ul>
+                            <li><span>Java Developer</span><br>Jr. Java developer at UniAxial Software</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contains " id="skills">
+                        <ul>
+                            <li><span>Backend </span><br>Java, Python<br> Spring, Springboot, Flask</li>
+                            <li><span>Frontend</span><br>HTML, CSS, Javascript, Typescript <br> Angular, Bootstrap</li>
+                            <li><span>Database</span><br>MySQL, Oracle, MongoDB</li>
+                            <li><span>Others</span><br>Linux, Docker, Computer Network</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>Bachelor's Degree (2019 - 2023)</span><br> Bachelor of Computer Science at Texas
+                                College of Management & IT</li>
+                            <li style="margin-bottom: 30px;"><span style="margin-bottom: 30px;">High
+                                    School</span><br>Viswa Niketan Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------services-------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend</h2>
+                    <p>Proficient in HTML, CSS, Bootstrap, and Angular, I bring a streamlined and creative approach to
+                        frontend development. Transforming concepts into visually appealing and functional interfaces is
+                        what I do best.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Backend</h2>
+                    <p>Proficient in building robust and efficient server-side components, my backend expertise includes
+                        Java with Spring and Spring Boot, as well as Python with Flask. I specialize in crafting
+                        scalable solutions, ensuring seamless database management, and integrating APIs for optimal web
+                        application performance.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>System and Network Administration</h2>
+                    <p>Proficient in CCNA for networking and experienced in RHCSA for Linux and Windows Server
+                        administration. Offering comprehensive solutions for stable, secure, and optimized systems and
+                        networks.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------portfolio-------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="work-img">
+                        <img src="/imgs/work1.png" alt="">
+                    </div>
+
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p> Developed a Hotel Management System using Spring Boot for backend, MySQL for database
+                            storage, and implemented JWT authentication for user security. The system features a product
+                            categorization section and includes a bill printing service to streamline operations,
+                            enhancing efficiency and user experience in the hotel environment.</p>
+                        <a href="https://github.com/udaya1i/Hotel-Management-System_SpringBoot"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-img">
+
+                        <img src="/imgs/work2.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3>Blog Application</h3>
+                        <p>Built a blog app with Angular, Bootstrap, and
+                            Firebase. Two panels for reading and managing blogs ensure a streamlined experience.
+                            Firebase handles data storage, providing an efficient solution for bloggers and
+                            administrators.</p>
+                        <a href="https://github.com/udaya1i/Blog-Application-Angular"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="work-img">
+                        <img src="/imgs/e-commerce.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Developed an Angular-based e-commerce website utilizing JSON Server and Spring Boot for
+                            backend functionality. This hybrid setup ensures seamless performance and robust data
+                            handling, providing users with a smooth and efficient online shopping experience.</p>
+                        <a href="https://github.com/udaya1i/E-Commerce-Website-Angular"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i><span> udaya.subedi111@</span>gmail.com</span></p>
+                    <p><i class="fas fa-phone"></i> +977 9869539234</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/udaya1i" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/udayaraj-subedi-800942198/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://gitlab.com/udayas" target="_blank"><i class="fab fa-gitlab"></i></a>
+                        <a href="https://www.facebook.com/myself.udaya" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/udaya__subedi/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/udayasubedi4" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="/imgs/UDAYARAJ SUBEDI RESUME.pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="mess"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite">
+            <p>© 2023 Udaya Subedi</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
