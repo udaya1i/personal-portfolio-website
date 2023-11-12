@@ -380,7 +380,7 @@ form .btn2{
 
 @media only screen and  (max-width:600px){
     #header{
-        background-image: url(/imgs/home-bg-phone.png);
+        background-image: url(imgs/home-bg-phone.png);
     }
     .btn.btn2{
         height: 50px;
