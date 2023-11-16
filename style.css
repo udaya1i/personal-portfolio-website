@@ -94,11 +94,11 @@ nav ul li a:hover:after {
     flex-basis: 35%;
 }
 .background-div {
-    background-image: url('/imgs/about.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
-    background-size: 200px 200px; /* Size of each square */
-    height: 400px; /* Adjust the height of the div */
-    width: 800px; /* Adjust the width of the div */
-    border: 1px solid #000; /* Optional: Add a border for visibility */
+    background-image: url('/imgs/about.jpg');
+    background-size: 200px 200px; 
+    height: 400px;
+    width: 800px; 
+    border: 1px solid #000; 
   }
 
 .about-col-1 img {
