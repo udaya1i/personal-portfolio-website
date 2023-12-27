@@ -1,20 +1,20 @@
 var tablinks = document.getElementsByClassName('tab-links');
 var tabcontains = document.getElementsByClassName('tab-contains');
 
-function opentab(tab) {
-    for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove('active-link');
-        tabcontains[i].style.display = 'none';
-    }
+// function opentab(tab) {
+//     for (var i = 0; i < tablinks.length; i++) {
+//         tablinks[i].classList.remove('active-link');
+//         tabcontains[i].style.display = 'none';
+//     }
 
-    var selectedTab = document.getElementById(tab);
-    var selectedTabLink = document.querySelector('[onclick="opentab(\'' + tab + '\')');
+//     var selectedTab = document.getElementById(tab);
+//     var selectedTabLink = document.querySelector('[onclick="opentab(\'' + tab + '\')');
 
-    if (selectedTab && selectedTabLink) {
-        selectedTabLink.classList.add('active-link');
-        selectedTab.style.display = 'block';
-    }
-}
+//     if (selectedTab && selectedTabLink) {
+//         selectedTabLink.classList.add('active-link');
+//         selectedTab.style.display = 'block';
+//     }
+// }
 
 var sidemenu = document.getElementById("sidemenu")
 
@@ -42,3 +42,30 @@ form.addEventListener('submit', e => {
         form.reset()
 
 })
+function openTab(evt, tabName) {
+    var i, tabcontents, tablinks;
+
+    tabcontents = document.getElementsByClassName("tab-contains");
+    for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active-link");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("experience").style.display = "block";
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].addEventListener("click", function(event) {
+            openTab(event, this.getAttribute("data-tab"));
+        });
+    }
+});

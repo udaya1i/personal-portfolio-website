@@ -462,3 +462,33 @@ form .btn2{
 .work-img{
     height: 300px;
 }
+
+/* Tech Stack Section */
+.techstack-category {
+    text-align: center;
+}
+
+.techstack-item {
+    display: inline-block;
+    width: 100px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.techstack-item img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+    .techstack-item {
+        width: 60px; /* Adjust size for smaller screens */
+        margin: 10px;
+    }
+
+    .techstack-item img {
+        width: 40px; /* Adjust image size */
+        height: 40px;
+    }
+}
